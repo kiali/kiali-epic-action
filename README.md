@@ -52,11 +52,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Sync epic issues with subtasks issues
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
       - name: Sync Epic Issues
         id: sync-epic
-        uses: ./
+        uses: kiali/kiali-epic-action@v1.0.1
         with:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
