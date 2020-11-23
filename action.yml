@@ -4,6 +4,9 @@ inputs:
   TOKEN:
     description: "Github token"
     default: ""
+branding:
+  icon: 'align-left'
+  color: 'blue'
 runs:
   using: 'node12'
   main: 'dist/index.js'
