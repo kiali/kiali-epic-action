@@ -1,0 +1,9 @@
+name: 'Kiali Epic Action'
+description: 'Sync Epic and Subtask Issues with a list of tasks'
+inputs:
+  TOKEN:
+    description: "Github token"
+    default: ""
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
